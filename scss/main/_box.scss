@@ -1,0 +1,44 @@
+.servises__text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.list-box {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.item-box {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $iconcolor;
+    border-radius: 4px;
+    @include transition (color);
+        
+    &:hover {
+        border-color: $bluecolor;
+    }
+
+    &:hover .item-box__icon {
+        fill: $bluecolor;
+    }
+}
+
+.item-box__link {
+    @include flexCenter;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.item-box__icon {
+    fill: $iconcolor;
+    @include transition (color);
+}
+
+

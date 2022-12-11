@@ -1,0 +1,174 @@
+
+.line {
+    border: 1px solid $border;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+
+}
+
+header {
+    background-color: $whitecolor;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.logo-navigation {
+    display: inline-block;
+    margin-right: 93px;
+    padding: 25px 0;
+}
+
+.logo-navigation__text {
+    color: $bluecolor;
+    font-family: $secfont;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo-navigation,
+.logo-footer {
+    color: $blackcolor;
+    font-family: $secfont;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.list-navigation {
+    display: flex;
+    color: $blackcolor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-left: 0;
+
+    .item-navigation:not(:last-child) {
+            margin-right: 50px;
+        }
+}
+
+.item-navigation__link {
+    color: $blackcolor;
+    padding: 32px 0;
+    
+&:hover,
+&:focus {
+            color: $bluecolor;
+            @include transition(color);
+        }
+}
+
+.list-adress {
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+
+    .item-adress:not(:last-child) {
+            margin-right: 50px;
+            
+        }
+
+             
+}
+
+.item-adress {
+    &:hover, &:focus .item-adress__icon {
+            fill: $bluecolor;
+            @include transition(fill);
+        }
+}
+
+
+.item-adress__link {
+    color: $graycolor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+
+    &:hover, &:focus {
+          color: $bluecolor;
+        @include transition(color);
+    }
+
+        &:hover .item-adress__icon {
+            fill: $bluecolor;
+            @include transition(fill);
+        }
+
+}
+
+.item-adress__phone {
+    color: $graycolor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+    &:hover, &:focus {
+        color: $bluecolor;
+        @include transition(color);
+    }
+        &:hover .item-adress__icon {
+            fill: $bluecolor;
+            @include transition(fill);
+        }
+}
+
+.item-adress__icon {
+    margin-right: 10px;
+    fill: $iconcolor;
+    &:hover, &:focus {
+        fill: $bluecolor;
+            @include transition(fill);
+        }
+    }
+
+
+
+.list-adress__link {
+    &:hover, &:focus {
+        color: $bluecolor;
+        @include transition(color);
+    }
+    
+}
+
+
+
+
+
+
+.active-link {
+    color: $bluecolor;
+}
+
+.item-navigation {
+    position: relative;
+}
+
+
+.active::after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: $bluecolor;
+    border-radius: 2px;
+    top: 45px;
+    left: 0;
+}

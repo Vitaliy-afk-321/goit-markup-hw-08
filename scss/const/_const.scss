@@ -1,0 +1,68 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.current {
+    color: $activebutton;
+}
+
+.link.current {
+    color: $activebutton;
+}
+
+body {
+    color: $maincolor;
+    font-family: $mainfont;
+}
+
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container-hero {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-clients {
+    display: flex;
+    align-items: center;
+
+    @extend .container-hero
+}
+
+.container__button {
+    padding: 6px 22px;
+}
+
+.container-cards {
+    padding: 20px 24px;
+}
+
+.clients {
+    @extend %section;
+}

@@ -1,0 +1,225 @@
+footer {
+    background-color: $bgcolorfooter;
+    padding: 60px 0;
+}
+
+.logo-footer {
+    color: $whitecolor;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.list-adress__link {
+    color: $whitecolor;
+    font-family: $mainfont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    @include transition (color border);
+}
+
+.list-adress__item {
+    padding: 0;
+    margin-bottom: 9px;
+    &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+}
+
+.list-adress__mail,
+.list-adress__phone {
+    font-family: $mainfont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    @include transition (color border);
+    &:hover, &:focus {
+    color: $bluecolor;
+    }
+}
+
+.list-footer__adress {
+    padding-left: 0;
+}
+
+
+
+
+
+.footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.list-joinus__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $whitecolor;
+    margin-bottom: 20px;
+}
+
+.list-footer {
+    margin-right: 70px;
+}
+
+.list-joinus {
+    padding: 0;
+}
+
+
+
+.list-social {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.list-social__item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    padding-bottom: 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+
+    &:nth-last-child(1) {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background-color: $bluecolor;
+        @include transition (background-color);
+    }
+        
+}
+
+.list-social__link {
+    width: 100%;
+    height: 100%;
+    @include flexCenter;
+    
+    
+}
+.list-social__icon {
+    fill: $whitecolor;
+}
+
+
+
+
+.footer-form {
+    margin-left: auto;
+    height: 86px;
+}
+
+.send-form__label {
+    width: 358px;
+}
+
+
+.form input {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.send-form {
+    display: flex;
+    align-content: center;
+}
+
+.send-form__input {
+    width: 358px;
+    height: 50px;
+    font-family: $mainfont;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    padding: 15px 16px;
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+  
+
+    &:focus {
+    border: 1px solid $bluecolor;
+    box-shadow: 
+        0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    outline: none;
+   
+    }
+}
+
+
+
+.send-form__button {
+    @include flexCenter;
+
+    font-family: inherit;
+    background: $bluecolor;
+
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: $secondtimer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $whitecolor;
+    
+
+    &:hover, &:focus {
+    color: $whitecolor;
+    background-color: $activebutton;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    @include transition( color
+        background-color
+        box-shadow);
+    
+    }
+
+}
+
+.send-form__icon {
+    fill: $whitecolor;
+    margin-left: 10px;
+}
+
+.text_sub_s {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $whitecolor;
+    @include flexCenter;
+}
+
+

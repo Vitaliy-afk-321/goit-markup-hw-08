@@ -1,0 +1,19 @@
+@mixin flexCenter($type: flex, $main-axis: center, $cross-axis: center) {
+    display: $type;
+    justify-content: $main-axis;
+    align-items: $cross-axis;
+}
+
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+@mixin trans($time: 250ms, $type: cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition-duration: $time;
+    transition-timing-function: $type;
+}
+
+@mixin transition($part, $time: 250ms, $cubic: cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition: $part $time $cubic;
+}

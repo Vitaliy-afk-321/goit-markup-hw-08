@@ -1,0 +1,22 @@
+.servises {
+    margin-bottom: 94px;
+}
+
+.servises__text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.list-servises {
+    display: flex;
+    padding: 0;
+
+    .item-servises:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+

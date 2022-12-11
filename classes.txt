@@ -1,0 +1,132 @@
+
+
+
+1.header - del
+2. container =
+3. header_nav - navigation
+4. header_logo - logo-navigation
+5. header_logo_web - logo-navigation__text
+
+   header_list_l - list-navigation
+6. header_item - item-navigation
+7. header_item_l - item-navigation__link
+
+8. header_nav_l - list-adress
+9. header_nav_l_a - item-adress
+10. header_nav_l_link - item-adress__link
+11. header_icon_mail - item-adress__icon
+12. header_nav_l_tel - item-adress__phone
+13. header_icon_tel -  item-adress__icon
+
+
+14. section_h1 - hero
+15. container_main - container-hero
+16. section-h1-main - hero__text
+17. progect_list_bi - button
+
+18. section - clients
+19. container - container-clients
+20. benefits =
+21. benefits_item - list-benefits
+
+23. icon-bcg = item-benefits
+24. icon = item-benefits__icon
+25. name_benef = item-benefits__title
+26. benef_txt = item-benefits__text
+
+27. servises =
+28. container_main = container-hero
+29. whatwedo = container-hero
+30. whatwedo_l = list-servises
+31. whatwedo_item = item-servises
+32. ourteam_img = item-servises__image
+33. overley-title = item-servises__text
+
+
+
+34. team = 
+35. container_main - container-hero
+36. ourteam = servises__text
+37. ourteam_l = list-team
+38. ourteam_item = item-team
+39. ourteam_img = item-team__image
+40. team_text = item-team__text
+41. ourteam_h3 = item-team__name
+42. ourteam_p = item-team__spot
+43. social-icons = list-card
+44. social-item = item-card
+45. social-link = item-card__link
+46. links-icon = item-card__icon
+
+
+47. permanent = box
+48. container_main - container-hero
+49. perm_text = servises__text
+50. perm_list = list-box
+51. perm_icons = item-box
+52. perm_icon = item-box__link
+53. permanent_icon = item-box__icon
+
+
+54. footer = without class
+55. footer_div = footer
+56. container_main = container-hero
+57. footer_list_adress = list-footer__adress
+58. footer_l = logo-footer
+59. header_logo_web = logo-navigation__text
+60. footer_a = adress
+61. footer_list = list-adress
+62. footer_list_item = list-adress__item
+63. footer_list_adr  = list-adress__link
+64. footer_list_mail = list-adress__mail
+65. footer_list_tel  = list-adress__phone
+
+
+
+66. joinus =
+67. joinus_list = list-joinus
+68. joinus_text = list-joinus__text
+69. joinus_social_list = list-social
+70. joinus-item = list-social__item
+71. joinus_icons = list-social__link
+72. links-icon-f = list-social__icon
+
+73. subscribe = footer-form
+74. sub_form = form
+75. title_s = list-joinus__text
+76. mail_sub = send-form
+77. send = send-form__label
+78. email_input = send-form__input
+79. subbutton = send-form__button
+80. links-icon-send = send-form__icon
+
+
+portfolio
+
+81. progect =
+82. container_main = container-hero
+83. progect_l = list-progect
+84. progect_list = list-progect__item
+85. progect_list_b = list-progect__button
+86. container_words = container__button
+
+
+87. img = cards
+88. img_l = list-cards
+89. img_list = list-cards__link
+90. hidden = list-cards--hidden
+91. img_list_l = list-cards__link--hidden
+92. sites_description = list-cards__description--hidden
+93. sd_text = list-cards__text--hidden
+94. img_text = list-cards__box
+95. container_test = container-cards
+96. img_h2 = list-cards__title
+97. img_p = list-cards__description
+ 
+
+https://tproger.ru/translations/useful-hotkeys-for-vs-code/
+
+
+ 
+
+        
