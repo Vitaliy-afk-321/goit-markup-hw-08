@@ -24,17 +24,17 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- Header -->
+ <!-- Header -->
 
-<header>
+ <header>
     <div class="container-clients line">
         <nav class="navigation">
             <a class="logo-navigation link" href="./index.html"><span class="logo-navigation__text">Web</span>Studio</a>
             <ul class="list-navigation list">
-                <li class="item-navigation"><a class="item-navigation__link link" href="./index.html">Студія</a></li>
-                <li class="item-navigation"><a class="item-navigation__link link active current" href="./portfolio.html">Портфоліо</a></li>
+                <li class="item-navigation"><a class="item-navigation__link link active current" href="./index.html">Студія</a></li>
+                <li class="item-navigation"><a class="item-navigation__link link" href="./portfolio.html">Портфоліо</a></li>
                 <li class="item-navigation"><a class="item-navigation__link link" href="#contacts">Контакти</a></li>
-            </ul>
+            </ul>     
         </nav>
         <ul class="list-adress list link">
             <li class="item-adress"><a class="item-adress__link link" href="mailto:info@devstudio.com">
@@ -49,7 +49,73 @@
         </svg>
         +38 096 111 11 11</a></li>
         </ul>
-    </div> 
+      
+      
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" fill="currentColor">
+            <use href="./img/icons.svg#menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            class="menu-close-icon"
+            width="40"
+            height="40"
+            fill="currentColor"
+          >
+            <use href="./img/icons.svg#close_40px"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link current" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="/">Контакти</a>
+          </li>
+        </ul>
+            <div style="margin-bottom: 80px"></div>
+        <ul class="mobile-contact list">
+          <li class="mobile-contact-item">
+            <a href="tel:+380961111111" class="mobile-contact-link link current"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contact-item">
+            <a href="mailto:info@devstudio.com" class="mobile-contact-link link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-social list">
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link link">Instagram</a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link link">Twitter</a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link link">Facebook</a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+     </div>
  </header>
 
     <!--Main-->
@@ -107,10 +173,20 @@
               <div class="hidden">
                 <img
                   class="list-cards__link--hidden link"
-                  src="./img/img12.jpg"
+                  src="./img/portfolio/img1_450.jpg"
                   alt="laptop"
-                  width="370"
+                  width="450"
                   height="294"
+                  loading="lazy"
+                  srcset="
+                      ./img/portfolio/img1_370.jpg 370w,
+                      ./img/portfolio/img1_354.jpg 354w,
+                      ./img/portfolio/img1_450.jpg 450w,
+                      ./img/portfolio/img1_708.jpg 708w,
+                      ./img/portfolio/img1_740.jpg 740w,
+                      ./img/portfolio/img1_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="list-cards__description--hidden">
                   <p class="list-cards__text--hidden">
@@ -131,10 +207,20 @@
               <div class="hidden">
                 <img
                   class="list-cards__link--hidden"
-                  src="./img/img22.jpg"
+                  src="./img/portfolio/img2_450.jpg"
                   alt="basketball"
-                  width="370"
+                  width="450"
                   height="294"
+                  loading="lazy"
+                  srcset="
+                      ./img/portfolio/img2_370.jpg 370w,
+                      ./img/portfolio/img2_354.jpg 354w,
+                      ./img/portfolio/img2_450.jpg 450w,
+                      ./img/portfolio/img2_708.jpg 708w,
+                      ./img/portfolio/img2_740.jpg 740w,
+                      ./img/portfolio/img2_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="list-cards__description--hidden">
                   <p class="list-cards__text--hidden">
@@ -158,10 +244,20 @@
               <div class="hidden">
                 <img
                   class="list-cards__link--hidden"
-                  src="./img/img32.jpg"
+                  src="./img/portfolio/img3_450.jpg"
                   alt="Seafood"
-                  width="370"
+                  width="450"
                   height="294"
+                  loading="lazy"
+                  srcset="
+                      ./img/portfolio/img3_370.jpg 370w,
+                      ./img/portfolio/img3_354.jpg 354w,
+                      ./img/portfolio/img3_450.jpg 450w,
+                      ./img/portfolio/img3_708.jpg 708w,
+                      ./img/portfolio/img3_740.jpg 740w,
+                      ./img/portfolio/img3_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="list-cards__description--hidden">
                   <p class="list-cards__text--hidden">
@@ -182,10 +278,20 @@
               <div class="hidden">
                 <img
                   class="list-cards__link--hidden"
-                  src="./img/img42.jpg"
+                  src="./img/portfolio/img4_450.jpg"
                   alt="hearphones"
-                  width="370"
+                  width="450"
                   height="294"
+                  loading="lazy"
+                  srcset="
+                      ./img/portfolio/img4_370.jpg 370w,
+                      ./img/portfolio/img4_354.jpg 354w,
+                      ./img/portfolio/img4_450.jpg 450w,
+                      ./img/portfolio/img4_708.jpg 708w,
+                      ./img/portfolio/img4_740.jpg 740w,
+                      ./img/portfolio/img4_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="list-cards__description--hidden">
                   <p class="list-cards__text--hidden">
@@ -207,10 +313,20 @@
               <div class="hidden">
                 <img
                   class="list-cards__link--hidden"
-                  src="./img/img52.jpg"
+                  src="./img/portfolio/img5_450.jpg"
                   alt="Boxes"
-                  width="370"
+                  width="450"
                   height="294"
+                  loading="lazy"
+                  srcset="
+                      ./img/portfolio/img5_370.jpg 370w,
+                      ./img/portfolio/img5_354.jpg 354w,
+                      ./img/portfolio/img5_450.jpg 450w,
+                      ./img/portfolio/img5_708.jpg 708w,
+                      ./img/portfolio/img5_740.jpg 740w,
+                      ./img/portfolio/img5_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="list-cards__description--hidden">
                   <p class="list-cards__text--hidden">
@@ -232,10 +348,20 @@
               <div class="hidden">
                 <img
                   class="list-cards__link--hidden"
-                  src="./img/img62.jpg"
+                  src="./img/portfolio/img6_450.jpg"
                   alt="Monitor"
-                  width="370"
+                  width="450"
                   height="294"
+                  loading="lazy"
+                  srcset="
+                      ./img/portfolio/img6_370.jpg 370w,
+                      ./img/portfolio/img6_354.jpg 354w,
+                      ./img/portfolio/img6_450.jpg 450w,
+                      ./img/portfolio/img6_708.jpg 708w,
+                      ./img/portfolio/img6_740.jpg 740w,
+                      ./img/portfolio/img6_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="list-cards__description--hidden">
                   <p class="list-cards__text--hidden">
@@ -257,10 +383,20 @@
               <div class="hidden">
                 <img
                   class="list-cards__link--hidden"
-                  src="./img/img72.jpg"
+                  src="./img/portfolio/img7_450.jpg"
                   alt="Journal"
-                  width="370"
+                  width="450"
                   height="294"
+                  loading="lazy"
+                  srcset="
+                      ./img/portfolio/img7_370.jpg 370w,
+                      ./img/portfolio/img7_354.jpg 354w,
+                      ./img/portfolio/img7_450.jpg 450w,
+                      ./img/portfolio/img7_708.jpg 708w,
+                      ./img/portfolio/img7_740.jpg 740w,
+                      ./img/portfolio/img7_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="list-cards__description--hidden">
                   <p class="list-cards__text--hidden">
@@ -282,10 +418,20 @@
               <div class="hidden">
                 <img
                   class="list-cards__link--hidden"
-                  src="./img/img82.jpg"
+                  src="./img/portfolio/img8_450.jpg"
                   alt="Tag"
-                  width="370"
+                  width="450"
                   height="294"
+                  loading="lazy"
+                  srcset="
+                      ./img/portfolio/img8_370.jpg 370w,
+                      ./img/portfolio/img8_354.jpg 354w,
+                      ./img/portfolio/img8_450.jpg 450w,
+                      ./img/portfolio/img8_708.jpg 708w,
+                      ./img/portfolio/img8_740.jpg 740w,
+                      ./img/portfolio/img8_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="list-cards__description--hidden">
                   <p class="list-cards__text--hidden">
@@ -307,10 +453,20 @@
               <div class="hidden">
                 <img
                   class="list-cards__link--hidden"
-                  src="./img/img92.jpg"
+                  src="./img/portfolio/img9_450.jpg"
                   alt="Notebook"
-                  width="370"
+                  width="450"
                   height="294"
+                  loading="lazy"
+                  srcset="
+                      ./img/portfolio/img9_370.jpg 370w,
+                      ./img/portfolio/img9_354.jpg 354w,
+                      ./img/portfolio/img9_450.jpg 450w,
+                      ./img/portfolio/img9_708.jpg 708w,
+                      ./img/portfolio/img9_740.jpg 740w,
+                      ./img/portfolio/img9_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="list-cards__description--hidden">
                   <p class="list-cards__text--hidden">
@@ -404,5 +560,7 @@
     </div> 
     </div>
  </footer>
+
+ <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

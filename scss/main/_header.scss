@@ -20,15 +20,29 @@ header {
     display: inline-block;
     margin-right: 93px;
     padding: 25px 0;
+@media screen and (max-width:767px) {
+        padding: 15px 0;
+        margin-right: 0;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+            margin-right: 87px;
+            }
+    
 }
 
 .logo-navigation__text {
     color: $bluecolor;
     font-family: $secfont;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width:1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 .logo-navigation,
@@ -52,7 +66,11 @@ header {
 
     .item-navigation:not(:last-child) {
             margin-right: 50px;
-        }
+        } 
+        
+    @media screen and (max-width:767px) {
+        display: none;
+    }    
 }
 
 .item-navigation__link {
@@ -69,14 +87,26 @@ header {
 .list-adress {
     margin-left: auto;
     padding: 0;
-    display: flex;
 
     .item-adress:not(:last-child) {
-            margin-right: 50px;
-            
-        }
+        margin-right: 50px;
+    }
 
-             
+  @media screen and (max-width:767px) {
+    display: none;
+  }
+
+
+  @media screen and (min-width:1200px) {
+    display: flex;
+  }
+
+  @media screen and (min-width:768px) and (max-width:1199px) {
+      .item-adress:not(:last-child) {
+          margin-right: 0;
+      }
+
+  }
 }
 
 .item-adress {
@@ -84,6 +114,7 @@ header {
             fill: $bluecolor;
             @include transition(fill);
         }
+        
 }
 
 
@@ -107,7 +138,12 @@ header {
             @include transition(fill);
         }
 
+@media screen and (min-width:768px) and (max-width:1199px) {
+    padding: 0;
+    margin-bottom: 10px; 
 }
+}
+
 
 .item-adress__phone {
     color: $graycolor;
@@ -126,6 +162,11 @@ header {
             fill: $bluecolor;
             @include transition(fill);
         }
+
+                @media screen and (min-width:768px) and (max-width:1199px) {
+                    padding: 0;
+                    display: block;
+                }
 }
 
 .item-adress__icon {

@@ -39,21 +39,59 @@ p {
     margin-bottom: 0;
 }
 
+.container-clients {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+@media screen and (min-width: 480px) {
+    display: flex;
+    margin-left: auto;
+    width: 480px;
+}
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        width: 768px;
+    }
+
+        @media screen and (min-width:1200px) {
+            align-items: center;
+            display: flex;
+            width: 1200px;
+           }
+}
+
 .container-hero {
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+
+
+//    phone screen 480px &
+        @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+        
+//    tablets screen 768px &
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+        
+//    desktop screen 1200px &
+        @media screen and (min-width: 1200px) {
+        width: 1200px;
+        }
+
 }
 
-.container-clients {
-    display: flex;
-    align-items: center;
 
-    @extend .container-hero
-}
+
+
 
 .container__button {
     padding: 6px 22px;
@@ -64,5 +102,28 @@ p {
 }
 
 .clients {
-    @extend %section;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.container__lines {
+    outline: solid 1px red;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    
+}
+
+.list-container__lines {
+    content: "";
+    width: 24px;
+    height: 2.67px;
+    background-color: $blackcolor;
+    margin-bottom: 4px;
 }

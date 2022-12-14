@@ -20,6 +20,14 @@
     @include transition(transform);
     background-color: $whitecolor;
     padding: 40px;
+    @media screen and (min-width:480px) {
+        width: 450px;
+    }
+        @media screen and (min-width:768px) {
+            width: 450px;
+        }
+
+              
 }
 
 .is-hidden {
@@ -40,10 +48,10 @@
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-
+    @include transition(background-color);
     &:hover {
     fill: $bluecolor;
-    @include transition(background-color);
+    @include transition(fill);
     }
 }
 
@@ -62,6 +70,13 @@
     color: $blackcolor;
     text-align: center;
     margin-bottom: 12px;
+    @media screen and (min-width:480px) {
+            line-height: 1.5;
+        }
+    
+        @media screen and (min-width:768px) {
+            line-height: 1.5;
+        }
 }
 
 .span_name {
@@ -95,6 +110,13 @@
     &:focus+svg {
         fill: $bluecolor;
     }
+
+        @media screen and (min-width:480px) {
+            width: 370px;
+        }
+                @media screen and (min-width:768px) {
+                    width: 370px;
+                }
 }
 
 .forms_label {
@@ -125,7 +147,13 @@
             outline: none;
             @include transition(border);
         }
+@media screen and (min-width:480px) {
+    width: 370px;
+}
 
+@media screen and (min-width:768px) {
+    width: 370px;
+}
 }
 
 .commitl {
@@ -168,6 +196,15 @@ textarea::placeholder {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: $bluecolor;
+    @media screen and (min-width:480px) {
+            font-size: 12px;
+            line-height: 1.16;
+        }
+    
+        @media screen and (min-width:768px) {
+            font-size: 12px;
+            line-height: 1.16;
+        }
 }
 
 .checkbox_icon {
@@ -227,6 +264,15 @@ textarea::placeholder {
     letter-spacing: 0.03em;
 
     color: $graycolor;
+    @media screen and (min-width:480px) {
+            font-size: 12px;
+                line-height: 1.16;
+        }
+    
+        @media screen and (min-width:768px) {
+            font-size: 12px;
+                line-height: 1.16;
+        }
 }
 
 .soglasie {
