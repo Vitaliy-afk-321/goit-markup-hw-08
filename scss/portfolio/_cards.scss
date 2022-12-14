@@ -5,6 +5,8 @@
         display: flex;
         flex-wrap: wrap;
         margin-top: 50px;
+        gap: 30px;
+
         @media screen and (max-width:1199px) {
             margin-top: 40px;
                 margin-bottom: 60px;
@@ -14,26 +16,27 @@
 }
 
 .list-cards {
-   @media screen and (min-width:480px) {
-    margin: 0;
-    width: 100%;
-   }
- @media screen and (min-width:1200px) {
-        width: 370px;
-        height: 404px;
-    
-        margin-right: 30px;
-        margin-bottom: 30px;
-    
-        &:nth-child(3n) {
-            margin-right: 0;
-        }
+$items: 1;
+    flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
+
+    @media screen and (min-width: 768px) {
+        $items: 2;
+        flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
+    }
+
+    @media screen and (min-width: 1200px) {
+        $items: 3;
+        flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
+    }
  }
        
-}
+
 
 .list-cards__link {
-    display: block;
+    display: flex;
+   height: 100%;
+    flex-direction: column;
+    text-decoration: none;
     transition:
                 background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -56,14 +59,18 @@
 
 .list-cards__link--hidden {
     display: block;
-    
+
 }
 
 .list-cards__box {
     border: 1px solid $cardcolor;
     border-top-style: none;
+    
 }
 
+.test {
+    color:$whitecolor;
+}
 
 /* cards description */
 
@@ -118,4 +125,6 @@
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
+
+   
 }
