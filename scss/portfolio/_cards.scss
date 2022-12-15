@@ -65,6 +65,7 @@ $items: 1;
 .list-cards__box {
     border: 1px solid $cardcolor;
     border-top-style: none;
+    flex-grow: 1;
     
 }
 
