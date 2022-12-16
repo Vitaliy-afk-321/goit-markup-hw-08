@@ -1,8 +1,6 @@
 footer {
     background-color: $bgcolorfooter;
-    @media screen and (min-width:480px) {
-        height: 603px;
-    }
+   
         @media screen and (min-width:768px) {
             height: 463px;
         }
@@ -14,14 +12,7 @@ footer {
 .logo-footer {
     color: $whitecolor;
     display: inline-block;
-    margin-bottom: 20px;
-    
-    @media screen and (max-width:767px) {
-            margin-top: 60px;
-        }
-
-
-
+    margin-bottom: 20px;  
 }
 
 .list-adress__link {
@@ -96,6 +87,9 @@ footer {
             
     }
 }
+.joinus {
+    margin-bottom: 60px;
+}
 
 .list-joinus__text {
     font-weight: 700;
@@ -133,7 +127,6 @@ footer {
    
     @media screen and (min-width:480px) {
             padding: 0;
-            margin-bottom: 60px;
         }
     @media screen and (min-width:1200px) {
             padding: 0;
@@ -164,7 +157,7 @@ footer {
 
     &:hover {
         background-color: $bluecolor;
-        @include transition (background-color);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
         
 }
@@ -187,15 +180,15 @@ footer {
    
     @media screen and (min-width:480px) {
             margin-left: auto;
-                height: 86px;
+                
     }
 @media screen and (min-width:768px) {
     margin-left: 0;
-    height: 86px;
+    
 }
 @media screen and (min-width:1200px) {
     margin-left: auto;
-    height: 86px;
+    
 }
 
 
@@ -254,11 +247,11 @@ footer {
         0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
     outline: none;
         }
-         @media screen and (min-width: 480px) {
-            margin-bottom: 20px;
-        }
+       
         @media screen and (min-width: 768px) {
             display: block;
         }
@@ -292,25 +285,27 @@ footer {
     letter-spacing: 0.06em;
     color: $whitecolor;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover, &:focus {
     color: $whitecolor;
     background-color: $activebutton;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    @include transition( color
-        background-color
-        box-shadow);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     }
            @media screen and (min-width: 480px) {
-            
+            margin-top: 20px;
                 margin-left: auto;
                 margin-right: auto;
            }
                    @media screen and (min-width: 1200px) {
                     margin-left: 12px;
+                    margin-top: 0;
                    }
 }
 
