@@ -104,11 +104,13 @@
     &:focus {
         border: 1px solid $bluecolor;
         outline: none;
+        @include transition(border);
     }
 
     &:hover+svg,
     &:focus+svg {
         fill: $bluecolor;
+        @include transition(fill);
     }
 
         @media screen and (min-width:480px) {
@@ -129,6 +131,15 @@
     height: 18px;
     left: 15px;
     top: 2px;
+    &:hover, &:focus {
+        fill: $bluecolor;
+        @include transition(fill);
+    }
+        &:hover .forms_input,
+        &:focus .forms_input {
+          fill: $bluecolor;
+          @include transition(fill);
+        }
 }
 
 

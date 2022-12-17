@@ -244,6 +244,17 @@ ul {
   margin-bottom: 32px;
 }
 
+.mobile-contact-phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.mobile-contact-phone:hover, .mobile-contact-phone:focus {
+  color: #2196F3;
+}
+
 .mobile-contact-link {
   font-weight: 500;
   font-size: 24px;
@@ -713,12 +724,6 @@ h1 {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
   }
 }
 
@@ -1656,9 +1661,13 @@ footer {
 .forms_input:hover, .forms_input:focus {
   border: 1px solid #2196F3;
   outline: none;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .forms_input:hover + svg, .forms_input:focus + svg {
   fill: #2196F3;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 480px) {
   .forms_input {
@@ -1681,6 +1690,16 @@ footer {
   height: 18px;
   left: 15px;
   top: 2px;
+}
+.icon_form:hover, .icon_form:focus {
+  fill: #2196F3;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon_form:hover .forms_input, .icon_form:focus .forms_input {
+  fill: #2196F3;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .commits {
