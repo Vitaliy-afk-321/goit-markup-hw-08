@@ -1,23 +1,24 @@
 // Color
 $maincolor: #212121;
-$bluecolor: #2196F3;
+$bluecolor: #2196f3;
 $blackcolor: #000000;
 $graycolor: #757575;
 $whitecolor: #ffffff;
 $adresscolor: rgba(255, 255, 255, 0.6);
-$buttoncolor: #F5F4FA;
-$bgcolorfooter: #2F303A;
-$activebutton: #188CE8;
-$border: #ECECEC;
-$iconcolor: #AFB1B8;
-$cardcolor: #EEEEEE;
+$buttoncolor: #f5f4fa;
+$bgcolorfooter: #2f303a;
+$activebutton: #188ce8;
+$border: #ececec;
+$iconcolor: #afb1b8;
+$cardcolor: #eeeeee;
 
 // Fonts
-$mainfont: 'Roboto', sans-serif;
-$secfont: 'Raleway', sans-serif;
+$mainfont: "Roboto", sans-serif;
+$secfont: "Raleway", sans-serif;
 
 // Animation
-$firsttimer: color 250ms, background-color 250ms, box-shadow 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+$firsttimer: color 250ms, background-color 250ms, box-shadow 250ms,
+  cubic-bezier(0.4, 0, 0.2, 1);
 $secondtimer: all 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 
 $indent: 30px;

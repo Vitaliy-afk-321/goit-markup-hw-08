@@ -1,29 +1,28 @@
 .servises {
-    margin-bottom: 94px;
-    @media screen and (max-width:1199px) {
-        display: none;
-    }
+  margin-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .servises__text {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-    @media screen and (max-width:1199px){
-        font-size: 28px;
-        line-height: 1.17;
-    }
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 
 .list-servises {
-    display: flex;
-    padding: 0;
+  display: flex;
+  padding: 0;
 
-    .item-servises:not(:last-child) {
-            margin-right: 30px;
-        }
+  .item-servises:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-

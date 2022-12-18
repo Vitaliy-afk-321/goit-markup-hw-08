@@ -1,90 +1,79 @@
 .benefits {
-    @media screen and (min-width:480px) {
-            display: flex;
-            padding: 0;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-    
-        @media screen and (min-width:768px) {
-         display: flex;
-         padding: 0;
-         flex-wrap: wrap;
-         gap: 30px;
-        }
-                @media screen and (min-width:1200px) {
-                    display: flex;
-                        padding: 0;
-                        flex-wrap: wrap;
-                        gap: 0;
-                        .list-benefits:not(:last-child) {
-                            margin-right: 30px;
-                        }
-                }
+  @media screen and (min-width: 480px) {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
-       
-                
-
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 0;
+    .list-benefits:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .list-benefits {
-    
-    @media screen and(min-width:768px) {
-        flex-basis: calc((100% - 30px) / 2);
-    }
-        @media screen and(min-width:1200px) {
-            flex-basis: calc((100% - 90px) / 4);
-        }
+  @media screen and(min-width:768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and(min-width:1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .item-benefits {
-    height: 120px;
-    background: $buttoncolor;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    @include flexCenter;
+  height: 120px;
+  background: $buttoncolor;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  @include flexCenter;
 }
 
-
-
-
 .item-benefits__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    @media screen and (min-width: 480px) {
-            text-align: center;
-        }
-    
-        @media screen and (min-width: 768px) {
-            
-            text-align: start;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: 270px;
-        }
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .item-benefits__text {
-    color: $graycolor;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    margin-top: 0;
-    margin-bottom: 0;
-    @media screen and (min-width: 480px) {
-            
-        }
-    
-        @media screen and (min-width: 768px) {
-            
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: 270px;
-        }
+  color: $graycolor;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }

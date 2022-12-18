@@ -1,132 +1,116 @@
 /* Images */
 
 .cards {
-    padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 50px;
-        gap: 30px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 30px;
 
-        @media screen and (max-width:1199px) {
-            margin-top: 40px;
-                margin-bottom: 60px;
-                gap: 30px;
-        }
-            
+  @media screen and (max-width: 1199px) {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    gap: 30px;
+  }
 }
 
 .list-cards {
-$items: 1;
+  $items: 1;
+  flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
+
+  @media screen and (min-width: 768px) {
+    $items: 2;
     flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
+  }
 
-    @media screen and (min-width: 768px) {
-        $items: 2;
-        flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
-    }
-
-    @media screen and (min-width: 1200px) {
-        $items: 3;
-        flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
-    }
- }
-       
-
-
-.list-cards__link {
-    display: flex;
-   height: 100%;
-    flex-direction: column;
-    text-decoration: none;
-    transition:
-                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-     &:hover .list-cards__description--hidden {
-        transform: translateY(0);
-    }
-    
-         &:hover {
-            box-shadow:
-                 0px 1px 1px rgba(0, 0, 0, 0.12),
-                 0px 4px 4px rgba(0, 0, 0, 0.06),
-                 1px 4px 6px rgba(0, 0, 0, 0.16);
-            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-         }
+  @media screen and (min-width: 1200px) {
+    $items: 3;
+    flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
+  }
 }
 
+.list-cards__link {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  text-decoration: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  &:hover .list-cards__description--hidden {
+    transform: translateY(0);
+  }
 
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
 
 .list-cards__link--hidden {
-    display: block;
-
+  display: block;
 }
 
 .list-cards__box {
-    border: 1px solid $cardcolor;
-    border-top-style: none;
-    flex-grow: 1;
-    
+  border: 1px solid $cardcolor;
+  border-top-style: none;
+  flex-grow: 1;
 }
 
 .test {
-    color:$whitecolor;
+  color: $whitecolor;
 }
 
 /* cards description */
 
-
 .hidden {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .list-cards__description--hidden {
-    @include flexCenter;
-    background-color: rgba(33, 150, 243, 0.9);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    color: $whitecolor;
-    font-size: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-    transform: translateY(101%);
-    transition: transform 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include flexCenter;
+  background-color: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: $whitecolor;
+  font-size: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  transform: translateY(101%);
+  transition: transform 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-cards__text--hidden {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: $whitecolor;
-    transition:
-            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: $whitecolor;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .list-cards__title {
-    color: $maincolor;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    margin-bottom: 4px;
+  color: $maincolor;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .list-cards__description {
-    color: $graycolor;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
-
-   
+  color: $graycolor;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }

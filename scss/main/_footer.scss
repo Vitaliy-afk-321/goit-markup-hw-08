@@ -1,326 +1,286 @@
 footer {
-    background-color: $bgcolorfooter;
-   
-        @media screen and (min-width:768px) {
-            height: 463px;
-        }
-                @media screen and (min-width:1200px) {
-                    height: max-content
-                }
+  background-color: $bgcolorfooter;
+
+  @media screen and (min-width: 768px) {
+    height: 463px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: max-content;
+  }
 }
 
 .logo-footer {
-    color: $whitecolor;
-    display: inline-block;
-    margin-bottom: 20px;  
+  color: $whitecolor;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .list-adress__link {
-    color: $whitecolor;
-    font-family: $mainfont;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $whitecolor;
+  font-family: $mainfont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-adress__item {
-    padding: 0;
-    margin-bottom: 9px;
-    &:nth-last-child(1) {
-            margin-bottom: 0;
-        }
+  padding: 0;
+  margin-bottom: 9px;
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
 }
 
 .list-adress__mail,
 .list-adress__phone {
-    font-family: $mainfont;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus {
+  font-family: $mainfont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
     color: $bluecolor;
-    }
+  }
 }
 
 .list-footer__adress {
-   
-    padding: 0;
+  padding: 0;
 
-    @media screen and (min-width:1200px) {
-            padding-left: 0;
-        }
+  @media screen and (min-width: 1200px) {
+    padding-left: 0;
+  }
 }
-
-
-
-
 
 .footer {
-   
-    
-    @media screen and (min-width:480px) {
-            text-align: center;
-        }
-                   @media screen and (min-width: 768px) and (max-width: 1199px) {
-                       display: flex;
-                       justify-content: center;
-                       flex-wrap: wrap;
-                       gap: 60px 165px;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px 165px;
 
-                        padding-top: 60px;
-                        padding-bottom: 60px;
-                   }
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-    @media screen and (min-width:1200px) {
-        display: flex;
-            align-items: baseline;
-            padding-top: 60px;
-            padding-bottom: 60px;
-            text-align: left;
-            
-    }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: left;
+  }
 }
 .joinus {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .list-joinus__text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $whitecolor;
-    margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $whitecolor;
+  margin-bottom: 20px;
 }
 
 .list-footer {
-    
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 
-    @media screen and (min-width:480px) {
-            justify-content: center;
-            margin-bottom: 60px;
-        }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 
-        @media screen and (min-width:768px) {
-        margin-bottom: 0;
-           
-        }
-
-    @media screen and (min-width:1200px) {
-        margin-right: 70px;
-        margin-bottom: 0;
-        justify-content: start;
-        
-    }
-
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    margin-bottom: 0;
+    justify-content: start;
+  }
 }
 
 .list-joinus {
-   
-    @media screen and (min-width:480px) {
-            padding: 0;
-        }
-    @media screen and (min-width:1200px) {
-            padding: 0;
-            margin: 0;
-        }
+  @media screen and (min-width: 480px) {
+    padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
-
-
 .list-social {
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .list-social__item {
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
-    padding-bottom: 0;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  padding-bottom: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:nth-last-child(1) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: $bluecolor;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:nth-last-child(1) {
-        margin-right: 0;
-    }
-
-    &:hover {
-        background-color: $bluecolor;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-        
+  }
 }
 
 .list-social__link {
-    width: 100%;
-    height: 100%;
-    @include flexCenter;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+  width: 100%;
+  height: 100%;
+  @include flexCenter;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-social__icon {
-    fill: $whitecolor;
+  fill: $whitecolor;
 }
-
-
-
 
 .footer-form {
-   
-    @media screen and (min-width:480px) {
-            margin-left: auto;
-                
-    }
-@media screen and (min-width:768px) {
-    margin-left: 0;
-    
-}
-@media screen and (min-width:1200px) {
+  @media screen and (min-width: 480px) {
     margin-left: auto;
-    
-}
-
-
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .send-form__label {
-    width: 358px;
-
-
+  width: 358px;
 }
 
-
 .form input {
-    width: 358px;
-    height: 50px;
-    background-color: transparent;
-    border: none;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-
-    
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 }
 
 .send-form {
-    @media screen and (min-width: 1200px) {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-        }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 }
-
-
 
 .send-form__input {
-    width: 358px;
-    height: 50px;
-    font-family: $mainfont;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    line-height: 16px;
-    padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  font-family: $mainfont;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+  padding: 15px 16px;
 
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    color: rgba(255, 255, 255, 0.6);
-  
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
 
-    &:focus {
+  &:focus {
     border: 1px solid $bluecolor;
-    box-shadow: 
-        0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
-    outline: none;
-        }
-       
-        @media screen and (min-width: 768px) {
-            display: block;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: 358px;
-        }
-}
-
-
-
-.send-form__button {
-    @include flexCenter;
-
-    font-family: inherit;
-    background: $bluecolor;
-
-    width: 200px;
-    height: 50px;
-    margin-left: 12px;
-
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    cursor: pointer;
-    
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    color: $whitecolor;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover, &:focus {
+    outline: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+
+.send-form__button {
+  @include flexCenter;
+
+  font-family: inherit;
+  background: $bluecolor;
+
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $whitecolor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
     color: $whitecolor;
     background-color: $activebutton;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    }
-           @media screen and (min-width: 480px) {
-            margin-top: 20px;
-                margin-left: auto;
-                margin-right: auto;
-           }
-                   @media screen and (min-width: 1200px) {
-                    margin-left: 12px;
-                    margin-top: 0;
-                   }
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (min-width: 480px) {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 
 .send-form__icon {
-    fill: $whitecolor;
-    margin-left: 10px;
+  fill: $whitecolor;
+  margin-left: 10px;
 }
 
 .text_sub_s {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: $whitecolor;
-    @include flexCenter;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $whitecolor;
+  @include flexCenter;
 }
-
-
